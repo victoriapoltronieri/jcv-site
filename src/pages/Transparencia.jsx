@@ -60,15 +60,7 @@ const relatorios = [
         titulo: "Relatório Anual 2025",
         descricao:
             "Relatório das atividades e ações desenvolvidas pela JCV durante o ano de 2025.",
-        arquivo: "#",
-        status: "Em breve",
-    },
-    {
-        titulo: "Relatório Anual 2024",
-        descricao:
-            "Relatório das atividades e ações desenvolvidas pela JCV durante o ano de 2024.",
-        arquivo: "#",
-        status: "Em breve",
+        arquivo: "/documentos/relatorio-anual-2025.pdf",
     },
 ];
 
