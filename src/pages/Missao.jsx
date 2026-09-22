@@ -166,7 +166,7 @@ export default function Missao() {
                         <div>
                             <span className="section-label">Faça parte</span>
 
-                            <h2>Vem cultivar com a gente.</h2>
+                            <h2>Venha cultivar com a gente.</h2>
 
                             <p>
                                 Voluntários, parceiros e doadores ajudam a transformar nossos

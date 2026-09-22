@@ -23,6 +23,17 @@ const diretoria = [
     },
 ];
 
+const conselhoFiscal = {
+    titulares: [
+        "Robertson Wesley Monteiro Pires",
+        "Luis Alejandro Sales Álvarez",
+    ],
+    suplentes: [
+        "Edleia Berger Leitão",
+        "Moisés Gonsalves Freitas",
+    ],
+};
+
 const documentosInstitucionais = [
     {
         titulo: "Estatuto Social",
@@ -63,18 +74,28 @@ const relatorios = [
 
 const demonstracoes = [
     {
-        titulo: "Demonstrações Contábeis e Financeiras 2025",
+        titulo: "Balanço Patrimonial 2025",
         descricao:
             "Documentos contábeis e financeiros referentes ao exercício de 2025.",
-        arquivo: "#",
-        status: "Em breve",
+        arquivo: "/documentos/ecd-2025-balanco.pdf",
     },
     {
-        titulo: "Demonstrações Contábeis e Financeiras 2024",
+        titulo: "Demonstração das Mutações do Patrimônio Líquido 2025",
         descricao:
-            "Documentos contábeis e financeiros referentes ao exercício de 2024.",
-        arquivo: "#",
-        status: "Em breve",
+            "Documentos contábeis e financeiros referentes ao exercício de 2025.",
+        arquivo: "/documentos/ecd-2025-dmpl.pdf",
+    },
+    {
+        titulo: "Demonstração de Resultado do Exercício 2025",
+        descricao:
+            "Documentos contábeis e financeiros referentes ao exercício de 2025.",
+        arquivo: "/documentos/ecd-2025-dre.pdf",
+    },
+    {
+        titulo: "Recibo de Entrega de Escrituração Contábil Digital 2025",
+        descricao:
+            "Documentos contábeis e financeiros referentes ao exercício de 2025.",
+        arquivo: "/documentos/ecd-2025-recibo.pdf",
     },
 ];
 
@@ -254,14 +275,41 @@ export default function Transparencia() {
                                 <h3>Conselho Fiscal da JCV</h3>
 
                                 <p>
-                                    Os membros do Conselho Fiscal e seus respectivos suplentes
-                                    também integram a estrutura de governança da organização.
+                                    O Conselho Fiscal acompanha e fiscaliza os atos de gestão
+                                    administrativa e financeira da organização.
                                 </p>
                             </div>
 
-                            <div className="fiscal-board__pending">
-                                Nomes do Conselho Fiscal serão adicionados após conferência
-                                dos documentos oficiais.
+                            <div className="fiscal-board__members">
+                                <div className="fiscal-group">
+                                    <span className="fiscal-group__title">
+                                        Membros titulares
+                                    </span>
+
+                                    {conselhoFiscal.titulares.map((nome) => (
+                                        <div
+                                            className="fiscal-member"
+                                            key={nome}
+                                        >
+                                            {nome}
+                                        </div>
+                                    ))}
+                                </div>
+
+                                <div className="fiscal-group">
+                                    <span className="fiscal-group__title">
+                                        Membros suplentes
+                                    </span>
+
+                                    {conselhoFiscal.suplentes.map((nome) => (
+                                        <div
+                                            className="fiscal-member"
+                                            key={nome}
+                                        >
+                                            {nome}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

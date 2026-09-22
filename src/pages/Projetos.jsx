@@ -359,7 +359,7 @@ export default function Projetos() {
                     <div className="projects-container projects-cta__inner">
                         <div>
                             <span className="section-label">
-                                Vem cultivar com a gente
+                                Venha cultivar com a gente
                             </span>
 
                             <h2>

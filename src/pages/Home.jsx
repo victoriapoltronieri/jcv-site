@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import mainLogo from "../assets/logo/logo-principal-horizontal.svg";
+import venhaCultivarImg from "../assets/images/venha-cultivar.jpeg";
 
 const quickLinks = [
     {
@@ -225,23 +226,25 @@ export default function Home() {
                         <div className="partner-banner">
                             <div className="partner-banner__image">
                                 <img
-                                    src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=85"
-                                    alt="Mãos segurando uma muda"
+                                    src={venhaCultivarImg}
+                                    alt="Participantes da JCV em atividade de convivência"
                                 />
                             </div>
 
-                            <div className="partner-banner__message">
-                                Vem
-                                <br />
-                                cultivar
-                                <br />
-                                com a gente.
-                            </div>
-
                             <div className="partner-banner__content">
+                                <span className="partner-banner__label">
+                                    Faça parte
+                                </span>
+
+                                <h2>
+                                    Venha cultivar
+                                    <br />
+                                    <em>com a gente.</em>
+                                </h2>
+
                                 <p>
-                                    Voluntários, parceiros e doadores tornam tudo isso possível.
-                                    Obrigada a todos que acreditam em nossa causa!
+                                    Voluntários, parceiros e doadores ajudam a transformar cuidado,
+                                    convivência e boas ideias em ações que fazem a diferença.
                                 </p>
 
                                 <Link to="/contato" className="button button--solid">

@@ -78,7 +78,7 @@ export default function Colabore() {
                 <section className="donation-hero">
                     <div className="donation-hero__content">
                         <span className="donation-eyebrow">
-                            Vem cultivar com a gente
+                            Venha cultivar com a gente
                         </span>
 
                         <h1>
