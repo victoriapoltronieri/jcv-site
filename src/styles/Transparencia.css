@@ -468,6 +468,29 @@
   font-size: 0.78rem;
 }
 
+.institutional-card__map-link {
+  width: fit-content;
+
+  margin-top: 14px;
+
+  color: #21a154;
+
+  font-size: 0.84rem;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.institutional-card__map-link:hover {
+  color: #118541;
+
+  transform: translateX(3px);
+}
+
 /* RESPONSIVO */
 
 @media (max-width: 950px) {
