@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 /* =========================================================
-   VARIÁVEIS
+   VARIÁVEIS GLOBAIS
 ========================================================= */
 
 :root {
@@ -41,6 +41,7 @@
 
   --shadow-soft: 0 18px 50px rgba(17, 17, 17, 0.08);
 }
+
 
 /* =========================================================
    RESET / GLOBAL
@@ -119,11 +120,17 @@ select {
   min-height: 100vh;
 }
 
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
 .container {
   width: min(calc(100% - 40px), var(--max-width));
 
   margin-inline: auto;
 }
+
 
 /* =========================================================
    ELEMENTOS GERAIS
@@ -143,76 +150,9 @@ select {
   text-transform: uppercase;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
-
-.header {
-  position: sticky;
-
-  top: 0;
-  z-index: 20;
-
-  width: 100%;
-
-  background: rgba(247, 247, 243, 0.88);
-
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-
-  border-bottom: 1px solid var(--gray-200);
-}
-
-.header__inner {
-  min-height: 90px;
-
-  display: flex;
-  align-items: center;
-
-  gap: 24px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-
-  flex-shrink: 0;
-}
-
-.brand__logo {
-  width: 190px;
-  height: auto;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 20px;
-
-  margin-left: auto;
-}
-
-.nav a {
-  position: relative;
-
-  font-size: 0.84rem;
-  font-weight: 600;
-
-  transition: color 0.2s ease;
-}
-
-.nav a:hover {
-  color: var(--green);
-}
-
-.nav__active {
-  color: var(--green);
-}
 
 /* =========================================================
-   BUTTONS
+   BOTÕES
 ========================================================= */
 
 .button {
@@ -238,7 +178,8 @@ select {
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
-    background 0.2s ease;
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .button:hover {
@@ -248,12 +189,11 @@ select {
 .button--solid {
   color: var(--white);
 
-  background:
-    linear-gradient(
-      135deg,
-      var(--green),
-      var(--green-dark)
-    );
+  background: linear-gradient(
+    135deg,
+    var(--green),
+    var(--green-dark)
+  );
 
   box-shadow:
     0 10px 25px rgba(33, 161, 84, 0.2);
@@ -266,6 +206,7 @@ select {
 
   border: 2px solid var(--green);
 }
+
 
 /* =========================================================
    HERO HOME
@@ -316,8 +257,6 @@ select {
 
   margin-bottom: 24px;
 
-  font-family: "Montserrat", sans-serif;
-
   font-size: 2.25rem;
   font-weight: 600;
 
@@ -349,8 +288,10 @@ select {
   gap: 14px;
 }
 
+
 /* =========================================================
    ABOUT
+   Mantido para não quebrar componentes antigos
 ========================================================= */
 
 .about-section {
@@ -371,12 +312,11 @@ select {
 
   border-radius: var(--radius-lg);
 
-  background:
-    linear-gradient(
-      110deg,
-      rgba(240, 223, 204, 0.8),
-      rgba(247, 247, 243, 0.96)
-    );
+  background: linear-gradient(
+    110deg,
+    rgba(240, 223, 204, 0.8),
+    rgba(247, 247, 243, 0.96)
+  );
 
   box-shadow: var(--shadow-soft);
 }
@@ -422,6 +362,7 @@ select {
 
   line-height: 1.25;
 }
+
 
 /* =========================================================
    PLANTA DECORATIVA
@@ -488,6 +429,7 @@ select {
   transform: rotate(48deg);
 }
 
+
 /* =========================================================
    QUICK LINKS
 ========================================================= */
@@ -523,7 +465,6 @@ select {
   background: var(--white);
 
   border: 1px solid #dfe2df;
-
   border-radius: 16px;
 
   transition:
@@ -584,12 +525,13 @@ select {
   color: var(--navy);
 
   font-size: 0.9rem;
-
   line-height: 1.35;
 }
 
+
 /* =========================================================
    IMPACTO
+   Mantido para não quebrar componentes antigos
 ========================================================= */
 
 .impact-section {
@@ -601,12 +543,11 @@ select {
 
   border-radius: 20px;
 
-  background:
-    linear-gradient(
-      100deg,
-      rgba(224, 243, 226, 0.88),
-      rgba(247, 247, 243, 0.95)
-    );
+  background: linear-gradient(
+    100deg,
+    rgba(224, 243, 226, 0.88),
+    rgba(247, 247, 243, 0.95)
+  );
 }
 
 .impact-card h2 {
@@ -640,8 +581,7 @@ select {
   width: 1px;
   height: calc(100% - 16px);
 
-  background:
-    rgba(17, 17, 17, 0.14);
+  background: rgba(17, 17, 17, 0.14);
 }
 
 .impact-item__icon {
@@ -666,6 +606,7 @@ select {
 
   line-height: 1.25;
 }
+
 
 /* =========================================================
    DOCUMENTÁRIO
@@ -738,9 +679,7 @@ select {
   border: 0;
 }
 
-/* =========================================================
-   PARTNER / COLABORE
-========================================================= */
+
 /* =========================================================
    PARTNER / COLABORE
 ========================================================= */
@@ -751,6 +690,7 @@ select {
 
 .partner-banner {
   display: grid;
+
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
 
   min-height: 430px;
@@ -759,7 +699,7 @@ select {
 
   border-radius: 28px;
 
-  background: #ffffff;
+  background: var(--white);
 
   box-shadow:
     0 22px 60px rgba(17, 17, 17, 0.09);
@@ -861,49 +801,6 @@ select {
 }
 
 
-/* RESPONSIVO */
-
-@media (max-width: 900px) {
-  .partner-banner {
-    grid-template-columns: 1fr;
-  }
-
-  .partner-banner__image {
-    min-height: 420px;
-    max-height: 520px;
-  }
-
-  .partner-banner__content {
-    padding: 45px 40px;
-  }
-}
-
-@media (max-width: 650px) {
-  .partner-section {
-    padding: 45px 0;
-  }
-
-  .partner-banner {
-    border-radius: 20px;
-  }
-
-  .partner-banner__image {
-    min-height: 330px;
-  }
-
-  .partner-banner__content {
-    padding: 36px 26px;
-  }
-
-  .partner-banner__content h2 {
-    font-size: 2.35rem;
-  }
-
-  .partner-banner__content .button {
-    width: 100%;
-  }
-}
-
 /* =========================================================
    FOOTER
 ========================================================= */
@@ -935,7 +832,6 @@ select {
   margin-top: 14px;
 
   font-size: 0.85rem;
-
   line-height: 1.5;
 }
 
@@ -999,8 +895,7 @@ select {
 .social-links a:hover {
   transform: translateY(-2px);
 
-  background:
-    rgba(33, 161, 84, 0.12);
+  background: rgba(33, 161, 84, 0.12);
 }
 
 .footer__bottom {
@@ -1026,21 +921,17 @@ select {
   color: var(--green);
 }
 
+
 /* =========================================================
    RESPONSIVO
 ========================================================= */
 
-/* TABLETS / TELAS MÉDIAS */
+
+/* =========================================================
+   TABLETS
+========================================================= */
 
 @media (max-width: 1020px) {
-  .nav {
-    display: none;
-  }
-
-  .header__inner {
-    justify-content: space-between;
-  }
-
   .quick-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1054,7 +945,10 @@ select {
   }
 }
 
-/* DOCUMENTÁRIO EM TABLETS */
+
+/* =========================================================
+   DOCUMENTÁRIO / COLABORE EM TABLETS
+========================================================= */
 
 @media (max-width: 900px) {
   .documentary-section__inner {
@@ -1068,15 +962,23 @@ select {
   }
 
   .partner-banner {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .partner-banner__image {
+    min-height: 420px;
+    max-height: 520px;
   }
 
   .partner-banner__content {
-    grid-column: 1 / -1;
+    padding: 45px 40px;
   }
 }
 
-/* MOBILE */
+
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 760px) {
   .container {
@@ -1086,19 +988,6 @@ select {
     );
   }
 
-  /* HEADER */
-
-  .header__inner {
-    min-height: 74px;
-  }
-
-  .header .button {
-    display: none;
-  }
-
-  .brand__logo {
-    width: 155px;
-  }
 
   /* HERO */
 
@@ -1117,6 +1006,7 @@ select {
   .hero__content p {
     font-size: 1rem;
   }
+
 
   /* ABOUT */
 
@@ -1138,6 +1028,7 @@ select {
     min-height: 170px;
   }
 
+
   /* QUICK LINKS */
 
   .quick-section {
@@ -1147,6 +1038,7 @@ select {
   .quick-grid {
     grid-template-columns: 1fr;
   }
+
 
   /* IMPACTO */
 
@@ -1160,23 +1052,13 @@ select {
     display: none;
   }
 
+
   /* PARTNER */
 
-  .partner-banner {
-    grid-template-columns: 1fr;
-  }
-
-  .partner-banner__image {
-    min-height: 230px;
-  }
-
-  .partner-banner__message {
-    padding: 30px;
-  }
-
   .partner-banner__content {
-    grid-column: auto;
+    padding: 40px 30px;
   }
+
 
   /* FOOTER */
 
@@ -1199,7 +1081,10 @@ select {
   }
 }
 
-/* MOBILE PEQUENO */
+
+/* =========================================================
+   MOBILE PEQUENO
+========================================================= */
 
 @media (max-width: 650px) {
   .hero h1 {
@@ -1215,6 +1100,9 @@ select {
     width: 100%;
   }
 
+
+  /* DOCUMENTÁRIO */
+
   .documentary-section {
     padding: 75px 0;
   }
@@ -1227,13 +1115,37 @@ select {
     font-size: 2rem;
   }
 
+
+  /* COLABORE */
+
   .partner-section {
     padding: 45px 0;
   }
+
+  .partner-banner {
+    border-radius: 20px;
+  }
+
+  .partner-banner__image {
+    min-height: 330px;
+  }
+
+  .partner-banner__content {
+    padding: 36px 26px;
+  }
+
+  .partner-banner__content h2 {
+    font-size: 2.35rem;
+  }
+
+  .partner-banner__content .button {
+    width: 100%;
+  }
 }
 
+
 /* =========================================================
-   AJUSTE DE TAMANHO DO TÍTULO DO HERO
+   TAMANHO RESPONSIVO DO TÍTULO DO HERO
 ========================================================= */
 
 @media (min-width: 640px) {

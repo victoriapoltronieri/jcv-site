@@ -4,6 +4,8 @@ import mainLogo from "../assets/logo/logo-principal-horizontal.svg";
 
 import "../styles/Transparencia.css";
 
+import Header from "../components/Header";
+
 const diretoria = [
     {
         cargo: "Presidente",
@@ -94,43 +96,7 @@ const demonstracoes = [
 export default function Transparencia() {
     return (
         <div className="transparency-page">
-            <header className="header">
-                <div className="container header__inner">
-                    <Link to="/" className="brand">
-                        <img
-                            src={mainLogo}
-                            alt="JCV - Jardins Cultivando Vidas"
-                            className="brand__logo"
-                        />
-                    </Link>
-
-                    <nav className="nav">
-                        <Link to="/">Início</Link>
-                        <Link to="/missao">Missão</Link>
-                        <Link to="/projetos">Projetos e Ações</Link>
-                        <Link to="/colabore">Colabore</Link>
-
-                        <Link to="/transparencia" className="nav__active">
-                            Transparência
-                        </Link>
-
-                        <Link to="/contato">Contato</Link>
-
-                        <a
-                            href="https://www.instagram.com/ongjcv/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Instagram
-                        </a>
-                    </nav>
-
-                    <Link to="/colabore" className="button button--solid">
-                        Doar agora
-                    </Link>
-                </div>
-            </header>
-
+            <Header />
             <main>
                 {/* HERO */}
 

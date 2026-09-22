@@ -8,50 +8,14 @@ import {
 } from "lucide-react";
 
 import mainLogo from "../assets/logo/logo-principal-horizontal.svg";
+import Header from "../components/Header";
 
 import "../styles/Contato.css";
 
 export default function Contato() {
     return (
         <div className="contact-page">
-            <header className="header">
-                <div className="container header__inner">
-                    <Link to="/" className="brand">
-                        <img
-                            src={mainLogo}
-                            alt="JCV - Jardins Cultivando Vidas"
-                            className="brand__logo"
-                        />
-                    </Link>
-
-                    <nav className="nav">
-                        <Link to="/">Início</Link>
-                        <Link to="/missao">Missão</Link>
-                        <Link to="/projetos">Projetos e Ações</Link>
-                        <Link to="/colabore">Colabore</Link>
-                        <Link to="/transparencia">
-  Transparência
-</Link>
-
-                        <Link to="/contato" className="nav__active">
-                            Contato
-                        </Link>
-
-                        <a
-                            href="https://www.instagram.com/ongjcv/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Instagram
-                        </a>
-                    </nav>
-
-                    <Link to="/col" className="button button--solid">
-                        Doar agora
-                    </Link>
-                </div>
-            </header>
-
+            <Header />
             <main>
                 {/* HERO */}
 

@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import mainLogo from "../assets/logo/logo-principal-horizontal.svg";
 import venhaCultivarImg from "../assets/images/venha-cultivar.jpeg";
 
+import Header from "../components/Header";
+
 const quickLinks = [
     {
         icon: "🌿",
@@ -56,39 +58,7 @@ const quickLinks = [
 export default function Home() {
     return (
         <div className="site">
-            <header className="header">
-                <div className="container header__inner">
-                    <a href="#inicio" className="brand">
-                        <img
-                            src={mainLogo}
-                            alt="JCV - Jardins Cultivando Vidas"
-                            className="brand__logo"
-                        />
-                    </a>
-
-                    <nav className="nav">
-                        <Link to="/">Início</Link>
-                        <Link to="/missao">Missão</Link>
-                        <Link to="/projetos">Projetos e Ações</Link>
-                        <Link to="/colabore">Colabore</Link>
-                        <Link to="/transparencia">
-                            Transparência
-                        </Link>
-                        <Link to="/contato">Contato</Link>
-                        <a
-                            href="https://www.instagram.com/ongjcv/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Instagram
-                        </a>
-                    </nav>
-
-                    <Link to="/colabore" className="button button--solid">
-                        Doar agora
-                    </Link>
-                </div>
-            </header>
+            <Header />
 
             <main>
                 <section id="inicio" className="hero">

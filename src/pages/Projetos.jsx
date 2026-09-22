@@ -4,6 +4,8 @@ import mainLogo from "../assets/logo/logo-principal-horizontal.svg";
 
 import "../styles/Projetos.css";
 
+import Header from "../components/Header";
+
 const oficinas = [
     {
         icon: "🇬🇧",
@@ -30,53 +32,7 @@ const oficinas = [
 export default function Projetos() {
     return (
         <div className="projects-page">
-            <header className="header">
-                <div className="container header__inner">
-                    <Link to="/" className="brand">
-                        <img
-                            src={mainLogo}
-                            alt="JCV - Jardins Cultivando Vidas"
-                            className="brand__logo"
-                        />
-                    </Link>
-
-                    <nav className="nav">
-                        <Link to="/">Início</Link>
-
-                        <Link to="/missao">
-                            Missão
-                        </Link>
-
-                        <Link to="/projetos" className="nav__active">
-                            Projetos e Ações
-                        </Link>
-
-                        <Link to="/colabore">
-                            Colabore
-                        </Link>
-
-                        <Link to="/transparencia">
-                            Transparência
-                        </Link>
-
-                        <Link to="/contato">
-                            Contato
-                        </Link>
-
-                        <a
-                            href="https://www.instagram.com/ongjcv/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Instagram
-                        </a>
-                    </nav>
-
-                    <Link to="/colabore" className="button button--solid">
-                        Doar agora
-                    </Link>
-                </div>
-            </header>
+         <Header />
 
             <main>
                 {/* HERO */}
