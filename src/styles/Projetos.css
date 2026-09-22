@@ -1,0 +1,527 @@
+.projects-page {
+  width: 100%;
+  min-height: 100vh;
+
+  font-family: "Montserrat", sans-serif;
+
+  background: #f7f7f3;
+  color: #111111;
+}
+
+.projects-container {
+  width: min(calc(100% - 80px), 1180px);
+  margin-inline: auto;
+}
+
+/* HERO */
+
+.projects-hero {
+  width: 100%;
+  min-height: 590px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 130px 8vw 90px;
+
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(240, 232, 54, 0.17),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 12% 92%,
+      rgba(44, 174, 223, 0.13),
+      transparent 28%
+    ),
+    #21a154;
+
+  color: #f7f7f3;
+}
+
+.projects-hero__content {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.projects-eyebrow {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color: #f0e836;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.projects-hero h1 {
+  margin: 0 0 28px;
+
+  max-width: 1000px;
+
+  font-size: clamp(2.8rem, 5.5vw, 5rem);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+}
+
+.projects-hero h1 span {
+  color: #f3c233;
+}
+
+.projects-hero p {
+  max-width: 750px;
+
+  margin: 0 0 32px;
+
+  font-size: 1.1rem;
+  line-height: 1.7;
+
+  color: rgba(247, 247, 243, 0.9);
+}
+
+.projects-hero__button {
+  background: #f7f7f3;
+  color: #21a154;
+}
+
+/* LABELS */
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 13px;
+
+  color: #21a154;
+
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.project-number {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  color: #9f5084;
+}
+
+/* INTRO */
+
+.projects-intro {
+  padding: 105px 0 80px;
+}
+
+.projects-intro > div {
+  max-width: 900px;
+}
+
+.projects-intro h2,
+.convivencia-card h2,
+.project-feature h2,
+.projects-message h2,
+.projects-cta h2 {
+  margin: 0 0 24px;
+
+  font-size: clamp(2rem, 3.7vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.projects-intro p {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* CONVIVÊNCIA */
+
+.convivencia-section {
+  padding: 30px 0 110px;
+}
+
+.convivencia-card {
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  background: white;
+
+  border: 1px solid rgba(17, 17, 17, 0.07);
+
+  box-shadow: 0 18px 50px rgba(17, 17, 17, 0.05);
+}
+
+.convivencia-card__intro {
+  padding: 60px 65px 50px;
+}
+
+.convivencia-card__intro > p {
+  max-width: 850px;
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.workshops {
+  padding: 55px 65px 65px;
+
+  background: #f0dfcc;
+}
+
+.workshops__heading {
+  max-width: 720px;
+
+  margin-bottom: 38px;
+}
+
+.workshops__heading h3 {
+  margin: 0;
+
+  font-size: clamp(1.6rem, 2.6vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.workshops-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.workshop-card {
+  min-height: 230px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: rgba(247, 247, 243, 0.88);
+
+  border: 1px solid rgba(17, 17, 17, 0.06);
+}
+
+.workshop-card__icon {
+  margin-bottom: 22px;
+
+  font-size: 1.8rem;
+}
+
+.workshop-card h4 {
+  margin: 0 0 12px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.workshop-card p {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* PROJETOS INDIVIDUAIS */
+
+.project-feature {
+  padding: 105px 0;
+}
+
+.project-feature__grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+
+  gap: 90px;
+}
+
+.project-feature__heading {
+  align-self: start;
+}
+
+.project-feature__content {
+  max-width: 780px;
+}
+
+.project-feature__content p {
+  line-height: 1.8;
+
+  margin: 0 0 22px;
+}
+
+.project-feature__lead {
+  font-size: 1.18rem;
+
+  font-weight: 600;
+
+  line-height: 1.65 !important;
+}
+
+.project-feature--bread {
+  background: white;
+}
+
+.project-feature--taekwondo {
+  background:
+    linear-gradient(
+      115deg,
+      rgba(44, 174, 223, 0.07),
+      rgba(247, 247, 243, 1)
+    );
+}
+
+.project-feature--bazaar {
+  background: white;
+}
+
+.project-process {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 32px;
+}
+
+.project-process span {
+  padding: 10px 17px;
+
+  border-radius: 999px;
+
+  background: rgba(33, 161, 84, 0.09);
+
+  color: #21a154;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.project-feature__note {
+  display: inline-block;
+
+  margin-top: 10px !important;
+
+  padding: 14px 18px;
+
+  border-radius: 12px;
+
+  background: rgba(243, 194, 51, 0.14);
+
+  font-size: 0.86rem;
+}
+
+/* MENSAGEM */
+
+.projects-message {
+  padding: 100px 0;
+}
+
+.projects-message__box {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 70px;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(240, 223, 204, 0.8),
+      rgba(247, 247, 243, 1)
+    );
+}
+
+.projects-message__box::after {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  right: -100px;
+  top: -110px;
+
+  border: 38px solid rgba(33, 161, 84, 0.08);
+
+  border-radius: 50%;
+}
+
+.projects-message__box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.projects-message p {
+  max-width: 720px;
+
+  margin: 0 0 12px;
+
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* CTA */
+
+.projects-cta {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.projects-cta__inner {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 60px;
+}
+
+.projects-cta__inner > div:first-child {
+  max-width: 680px;
+}
+
+.projects-cta p {
+  line-height: 1.7;
+}
+
+.projects-cta__buttons {
+  display: flex;
+
+  flex-shrink: 0;
+
+  gap: 12px;
+}
+
+/* FOOTER */
+
+.projects-footer {
+  padding: 42px 0;
+
+  background: #f7f7f3;
+
+  border-top: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+.projects-footer__inner {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.projects-footer__logo {
+  width: 170px;
+
+  height: auto;
+}
+
+.projects-footer p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 0.78rem;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 950px) {
+  .project-feature__grid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .projects-cta__inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 750px) {
+  .workshops-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .projects-container {
+    width: min(calc(100% - 36px), 1180px);
+  }
+
+  .projects-hero {
+    min-height: 550px;
+
+    padding: 120px 22px 70px;
+  }
+
+  .projects-hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .projects-intro {
+    padding: 75px 0 55px;
+  }
+
+  .convivencia-section {
+    padding-bottom: 70px;
+  }
+
+  .convivencia-card__intro {
+    padding: 38px 25px;
+  }
+
+  .workshops {
+    padding: 38px 25px;
+  }
+
+  .project-feature {
+    padding: 75px 0;
+  }
+
+  .projects-message {
+    padding: 70px 0;
+  }
+
+  .projects-message__box {
+    padding: 42px 26px;
+  }
+
+  .projects-cta {
+    padding: 75px 0;
+  }
+
+  .projects-cta__buttons {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+  .projects-footer__inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}

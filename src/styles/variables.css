@@ -1,0 +1,37 @@
+:root {
+  /* JCV Brand */
+  --green: #21a154;
+  --green-light: #9bc24f;
+
+  --purple: #9f5084;
+  --pink: #da2284;
+
+  --blue: #3f8ebe;
+  --blue-light: #2caedf;
+
+  --yellow: #f0e836;
+  --mustard: #f3c233;
+
+  --orange: #e88453;
+
+  --black: #111111;
+
+  --off-white: #f7f7f3;
+  --rose: #f0dfcc;
+
+  /* Interface */
+  --white: #ffffff;
+  --gray-100: #f4f4f2;
+  --gray-300: #deded9;
+  --gray-600: #676767;
+  --gray-800: #333333;
+
+  /* Layout */
+  --max-width: 1200px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --shadow-soft:
+    0 12px 35px rgba(17, 17, 17, 0.08);
+}
