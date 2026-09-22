@@ -222,8 +222,7 @@ export default function Projetos() {
                         <div className="project-feature__content">
                             <p className="project-feature__lead">
                                 O Pão da Vida é uma ação de apoio alimentar voltada a
-                                pessoas que permanecem por longos períodos em hospitais,
-                                ambulatórios e unidades de saúde da Grande Vitória.
+                                pessoas que permanecem por longos períodos em hospitais da Grande Vitória.
                             </p>
 
                             <p>
