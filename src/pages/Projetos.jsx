@@ -231,15 +231,16 @@ export default function Projetos() {
                             </p>
 
                             <p>
+                                O projeto "Vem Ser Taekwondo" é uma parceria entre a Federação Espiritosantense de Taekwondo e a JCV, 
+                                que utiliza o esporte como ferramenta de formação, inclusão e transformação social.
+                            </p>
+
+                            <p>
                                 As aulas de Taekwondo proporcionam um espaço de convivência,
                                 disciplina e desenvolvimento, estimulando autocontrole,
                                 responsabilidade, condicionamento físico e interação social.
                             </p>
 
-                            <p className="project-feature__note">
-                                Novas informações sobre turmas, horários e participação
-                                serão divulgadas em breve.
-                            </p>
                         </div>
                     </div>
                 </section>

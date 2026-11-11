@@ -2,6 +2,12 @@ import { Link } from "react-router-dom";
 import mainLogo from "../assets/logo/logo-principal-horizontal.svg";
 import venhaCultivarImg from "../assets/images/venha-cultivar.jpeg";
 
+// Logos institucionais: substitua os dois placeholders pelas imagens oficiais
+// quando você receber os arquivos definitivos do SCFV e do SUAS.
+import logoScfv from "../assets/logo/logo-scfv.svg";
+import logoSuas from "../assets/logo/logo-suas.svg";
+import seloTransparencia from "../assets/logo/selo-transparencia.png";
+
 import Header from "../components/Header";
 
 const quickLinks = [
@@ -187,6 +193,74 @@ export default function Home() {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen
                             />
+                        </div>
+                    </div>
+                </section>
+
+                <section className="recognition-section">
+                    <div className="container">
+                        <div className="recognition-section__heading">
+                            <span className="section-label">
+                                Atuação e reconhecimento
+                            </span>
+
+                            <h2>Compromissos que fortalecem nosso trabalho.</h2>
+
+                            <p>
+                                A atuação da JCV está conectada à rede socioassistencial e a
+                                práticas de transparência que reforçam nosso compromisso com
+                                as pessoas, a comunidade e nossos parceiros.
+                            </p>
+                        </div>
+
+                        <div className="recognition-grid">
+                            <article className="recognition-card">
+                                <div className="recognition-card__logo">
+                                    <img
+                                        src={logoScfv}
+                                        alt="Serviço de Convivência e Fortalecimento de Vínculos"
+                                    />
+                                </div>
+
+                                <h3>Serviço de Convivência e Fortalecimento de Vínculos</h3>
+                                <p>
+                                    Um dos eixos centrais da atuação socioassistencial da JCV.
+                                </p>
+                            </article>
+
+                            <article className="recognition-card">
+                                <div className="recognition-card__logo">
+                                    <img
+                                        src={logoSuas}
+                                        alt="Sistema Único de Assistência Social - SUAS"
+                                    />
+                                </div>
+
+                                <h3>Sistema Único de Assistência Social</h3>
+                                <p>
+                                    Nossa atuação dialoga com a política pública de assistência
+                                    social e com a proteção social básica.
+                                </p>
+                            </article>
+
+                            <article className="recognition-card recognition-card--seal">
+                                <div className="recognition-card__logo recognition-card__logo--seal">
+                                    <img
+                                        src={seloTransparencia}
+                                        alt="Selo Transparência - Certificadora Social"
+                                    />
+                                </div>
+
+                                <h3>Selo Transparência</h3>
+                                <p>
+                                    Um reconhecimento ao compromisso da JCV com clareza,
+                                    prestação de contas e acesso público às informações.
+                                </p>
+
+                                <Link to="/transparencia" className="recognition-card__link">
+                                    Saiba mais sobre o selo <span>→</span>
+                                </Link>
+                            </article>
                         </div>
                     </div>
                 </section>

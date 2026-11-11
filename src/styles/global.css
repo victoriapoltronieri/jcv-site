@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 /* =========================================================
-   VARIÁVEIS GLOBAIS
+   VARIÃVEIS GLOBAIS
 ========================================================= */
 
 :root {
@@ -152,7 +152,7 @@ select {
 
 
 /* =========================================================
-   BOTÕES
+   BOTÃ•ES
 ========================================================= */
 
 .button {
@@ -291,7 +291,7 @@ select {
 
 /* =========================================================
    ABOUT
-   Mantido para não quebrar componentes antigos
+   Mantido para nÃ£o quebrar componentes antigos
 ========================================================= */
 
 .about-section {
@@ -531,7 +531,7 @@ select {
 
 /* =========================================================
    IMPACTO
-   Mantido para não quebrar componentes antigos
+   Mantido para nÃ£o quebrar componentes antigos
 ========================================================= */
 
 .impact-section {
@@ -609,7 +609,7 @@ select {
 
 
 /* =========================================================
-   DOCUMENTÁRIO
+   DOCUMENTÃRIO
 ========================================================= */
 
 .documentary-section {
@@ -947,7 +947,7 @@ select {
 
 
 /* =========================================================
-   DOCUMENTÁRIO / COLABORE EM TABLETS
+   DOCUMENTÃRIO / COLABORE EM TABLETS
 ========================================================= */
 
 @media (max-width: 900px) {
@@ -1101,7 +1101,7 @@ select {
   }
 
 
-  /* DOCUMENTÁRIO */
+  /* DOCUMENTÃRIO */
 
   .documentary-section {
     padding: 75px 0;
@@ -1145,7 +1145,7 @@ select {
 
 
 /* =========================================================
-   TAMANHO RESPONSIVO DO TÍTULO DO HERO
+   TAMANHO RESPONSIVO DO TÃTULO DO HERO
 ========================================================= */
 
 @media (min-width: 640px) {
@@ -1157,5 +1157,114 @@ select {
 @media (min-width: 1024px) {
   .hero h1 {
     font-size: 3.4rem;
+  }
+}
+/* =========================================================
+   ATUAÃ‡ÃƒO E RECONHECIMENTO
+========================================================= */
+
+.recognition-section {
+  padding: 105px 0;
+  background: var(--off-white);
+}
+
+.recognition-section__heading {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.recognition-section__heading h2 {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 3.4vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.recognition-section__heading p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.recognition-card {
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 24px;
+  background: var(--white);
+  box-shadow: 0 16px 38px rgba(17, 17, 17, 0.05);
+}
+
+.recognition-card__logo {
+  min-height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(247, 247, 243, 0.86);
+}
+
+.recognition-card__logo img {
+  width: 100%;
+  max-width: 220px;
+  max-height: 110px;
+  object-fit: contain;
+}
+
+.recognition-card__logo--seal img {
+  max-width: 135px;
+  max-height: 135px;
+}
+
+.recognition-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.12rem;
+  line-height: 1.4;
+}
+
+.recognition-card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.recognition-card__link {
+  margin-top: auto;
+  padding-top: 22px;
+  color: var(--green);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .recognition-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recognition-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .recognition-section {
+    padding: 75px 0;
+  }
+
+  .recognition-card {
+    padding: 25px;
   }
 }

@@ -163,7 +163,7 @@
   grid-column: span 1;
 }
 
-/* GOVERNANÇA */
+/* GOVERNANÃ‡A */
 
 .governance-section {
   padding: 105px 0;
@@ -371,7 +371,7 @@
   text-decoration: none;
 }
 
-/* RELATÓRIOS */
+/* RELATÃ“RIOS */
 
 .reports-section {
   padding: 105px 0;
@@ -586,5 +586,90 @@
     flex-direction: column;
 
     align-items: flex-start;
+  }
+}
+/* CERTIFICAÃ‡ÃƒO DE TRANSPARÃŠNCIA */
+
+.transparency-certificate {
+  padding: 105px 0;
+  background: #ffffff;
+}
+
+.transparency-certificate__card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.55fr);
+  gap: 65px;
+  align-items: center;
+  padding: 62px 68px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 28px;
+  background:
+    radial-gradient(
+      circle at 92% 8%,
+      rgba(33, 161, 84, 0.12),
+      transparent 34%
+    ),
+    #f7f7f3;
+}
+
+.transparency-certificate__content h2 {
+  margin: 0 0 22px;
+  font-size: clamp(2rem, 3.5vw, 3.35rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.transparency-certificate__content p {
+  max-width: 760px;
+  margin: 0 0 28px;
+  color: #4f514d;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.transparency-certificate__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #21a154;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.transparency-certificate__seal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transparency-certificate__seal img {
+  width: min(100%, 275px);
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 850px) {
+  .transparency-certificate__card {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .transparency-certificate__seal {
+    justify-content: flex-start;
+  }
+
+  .transparency-certificate__seal img {
+    width: 190px;
+  }
+}
+
+@media (max-width: 650px) {
+  .transparency-certificate {
+    padding: 75px 0;
+  }
+
+  .transparency-certificate__card {
+    padding: 38px 25px;
   }
 }

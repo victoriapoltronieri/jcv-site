@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import mainLogo from "../assets/logo/logo-principal-horizontal.svg";
+import seloTransparencia from "../assets/logo/selo-transparencia.png";
 
 import "../styles/Transparencia.css";
 
@@ -415,6 +416,45 @@ export default function Transparencia() {
                                     )}
                                 </article>
                             ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* CERTIFICAÇÃO DE TRANSPARÊNCIA */}
+
+                <section className="transparency-certificate">
+                    <div className="transparency-container">
+                        <div className="transparency-certificate__card">
+                            <div className="transparency-certificate__content">
+                                <span className="section-label">
+                                    Reconhecimento institucional
+                                </span>
+
+                                <h2>JCV reconhecida com o Selo Transparência</h2>
+
+                                <p>
+                                    A conquista do Selo Transparência da Certificadora Social
+                                    reforça o compromisso da JCV com a clareza, a prestação de
+                                    contas e o acesso público às informações da organização. Esse
+                                    reconhecimento fortalece a confiança de participantes, famílias,
+                                    voluntários, parceiros e doadores e reafirma a importância de
+                                    uma gestão responsável e aberta à sociedade.
+                                </p>
+
+                                <a
+                                    href="#documentos"
+                                    className="transparency-certificate__link"
+                                >
+                                    Consulte nossos documentos públicos <span>↓</span>
+                                </a>
+                            </div>
+
+                            <div className="transparency-certificate__seal">
+                                <img
+                                    src={seloTransparencia}
+                                    alt="Selo Transparência - Certificadora Social"
+                                />
+                            </div>
                         </div>
                     </div>
                 </section>
