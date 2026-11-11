@@ -35,7 +35,7 @@ export default function Colabore() {
 
     return (
         <div className="donation-page">
-           <Header />
+            <Header />
 
             <main>
                 {/* HERO */}
@@ -73,10 +73,10 @@ export default function Colabore() {
                         <h2>Existem diferentes formas de cultivar com a gente.</h2>
 
                         <p>
-                            Você pode contribuir financeiramente com qualquer valor ou,
-                            se representa uma empresa, colaborar oferecendo produtos,
-                            serviços, conhecimento ou estrutura que ajudem a fortalecer
-                            nossos projetos.
+                            Você pode contribuir com uma doação pontual, tornar-se um doador
+                            recorrente, oferecer seu tempo como voluntário ou, se representa uma
+                            empresa, colaborar com recursos, serviços, conhecimento ou estrutura
+                            que ajudem a fortalecer nossos projetos.
                         </p>
                     </div>
                 </section>
@@ -134,6 +134,93 @@ export default function Colabore() {
                                 Uma pequena contribuição, somada a muitas outras, ajuda a
                                 transformar cuidado em ação.
                             </p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* DOADOR RECORRENTE */}
+
+                <section className="recurring-section">
+                    <div className="donation-container">
+                        <div className="recurring-grid">
+                            <div className="recurring-content">
+                                <span className="section-label">Doador recorrente</span>
+
+                                <h2>
+                                    Um apoio contínuo ajuda a manter a JCV em movimento.
+                                </h2>
+
+                                <p>
+                                    Ao se tornar um doador recorrente, você contribui mensalmente
+                                    para a continuidade dos projetos, oficinas e ações desenvolvidas
+                                    pela JCV ao longo do ano.
+                                </p>
+
+                                <p>
+                                    Para participar, basta preencher nosso formulário de cadastro.
+                                    Após o cadastramento, os boletos mensais serão emitidos pelo
+                                    sistema Asaas.
+                                </p>
+
+                                <a
+                                    href="https://forms.gle/aDYUNFqAZdAVy3bM6"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="button button--solid recurring-button"
+                                >
+                                    Quero ser um doador recorrente
+                                    <span>↗</span>
+                                </a>
+                            </div>
+
+                            <div className="recurring-card">
+                                <span className="recurring-card__eyebrow">
+                                    Como funciona
+                                </span>
+
+                                <div className="recurring-step">
+                                    <span>01</span>
+
+                                    <div>
+                                        <strong>Preencha o formulário</strong>
+                                        <p>
+                                            Informe os dados necessários para realizar o cadastro.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="recurring-step">
+                                    <span>02</span>
+
+                                    <div>
+                                        <strong>Realizamos seu cadastro</strong>
+                                        <p>
+                                            As informações são cadastradas para habilitar sua
+                                            contribuição recorrente.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="recurring-step">
+                                    <span>03</span>
+
+                                    <div>
+                                        <strong>Receba seus boletos mensalmente</strong>
+                                        <p>
+                                            O sistema Asaas fará a emissão dos boletos para sua
+                                            contribuição mensal.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="recurring-card__message">
+                                    <Heart size={24} />
+
+                                    <span>
+                                        Constância também é uma forma de cuidado.
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

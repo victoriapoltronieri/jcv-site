@@ -303,6 +303,160 @@
   line-height: 1.7;
 }
 
+/* =========================
+   DOADOR RECORRENTE
+========================= */
+
+.recurring-section {
+  padding: 110px 0;
+  background: #f7f7f3;
+}
+
+.recurring-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.recurring-content {
+  max-width: 560px;
+}
+
+.recurring-content h2 {
+  margin: 0 0 24px;
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  color: #111111;
+}
+
+.recurring-content > p {
+  margin: 0 0 18px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555555;
+}
+
+.recurring-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+/* Card */
+
+.recurring-card {
+  padding: 42px;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 161, 84, 0.12);
+  box-shadow: 0 18px 50px rgba(17, 17, 17, 0.06);
+}
+
+.recurring-card__eyebrow {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #21a154;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.recurring-step {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid #ecece7;
+}
+
+.recurring-step > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #eef6df;
+  color: #21a154;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.recurring-step strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #111111;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.recurring-step p {
+  margin: 0;
+  color: #666666;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.recurring-card__message {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+  padding: 18px 22px;
+  border-radius: 18px;
+  background: #21a154;
+  color: #ffffff;
+}
+
+.recurring-card__message span {
+  font-weight: 600;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .recurring-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .recurring-content {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  .recurring-section {
+    padding: 75px 0;
+  }
+
+  .recurring-card {
+    padding: 28px 22px;
+    border-radius: 22px;
+  }
+
+  .recurring-step {
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
+  }
+
+  .recurring-step > span {
+    width: 44px;
+    height: 44px;
+  }
+
+  .recurring-button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 /* EMPRESAS */
 
 .company-section {
